@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+ 
+    "name": "LettersGovSpb Paste Enable",
+    "description": "This extension will enable paste on letters.gov.spb page",
+    "version": "1.2",
+
+    "icons": {
+      "16": "LettersGovSpbPasteEnable.png"
+    },
+ 
+    "content_scripts": [
+      {
+        "matches": [ "https://letters.gov.spb.ru/reception/form/" ],
+        "js": [ "LettersGovSpbPasteEnable.js"],
+        "run_at": "document_end"
+      }
+    ]
+}
